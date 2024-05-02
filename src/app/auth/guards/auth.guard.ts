@@ -31,7 +31,6 @@ const checkAuthStatus = (): boolean | Observable<boolean> => {
   //se inyectan el AuthService y el Router
 
   const authService: AuthService = inject(AuthService);
-
   const router: Router = inject(Router);
 
   return authService.checkAuthentication().pipe(
